@@ -8,8 +8,8 @@ GIT_BINARY=${GIT_BINARY:-$( which git; )};
 TMPDIR=${TMPDIR:-$( mktemp -d 2>/dev/null )};
 
 cd "${TMPDIR}";
-"${GIT_BINARY}" init;
-"${GIT_BINARY}" fetch --depth 1 --no-recurse-submodules --no-tags "${URL}" "${BRANCH}";
+"${GIT_BINARY}" init -q;
+"${GIT_BINARY}" fetch -q --depth 1 --no-recurse-submodules --no-tags "${URL}" "${BRANCH}";
 "${GIT_BINARY}" cat-file -p "FETCH_HEAD:${FILE}";
 cd -;
 rm -Rf "${TMPDIR}";
