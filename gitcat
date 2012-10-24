@@ -11,5 +11,4 @@ cd "${TMPDIR}";
 "${GIT_BINARY}" init -q;
 "${GIT_BINARY}" fetch -q --depth 1 --no-recurse-submodules --no-tags "${URL}" "${BRANCH}";
 "${GIT_BINARY}" cat-file -p "FETCH_HEAD:${FILE}";
-cd -;
 rm -Rf "${TMPDIR}";
