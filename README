@@ -1,6 +1,0 @@
-curl https://raw.github.com/dmorilha/gitcat/master/gitcat
-curl https://raw.github.com/dmorilha/gitcat/master/gitcat | sh
-curl https://raw.github.com/dmorilha/gitcat/master/gitcat | sh | sh
-curl https://raw.github.com/dmorilha/gitcat/master/gitcat | sh | sh | sh (...)
-
-next steps are to parse and accept parameters...

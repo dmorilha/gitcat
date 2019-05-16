@@ -1,6 +1,6 @@
 #!/bin/sh
 
-URL=${URL:-'git://github.com/dmorilha/gitcat.git'};
+URL=${URL:-'https://github.com/dmorilha/gitcat.git'};
 BRANCH=${BRANCH:-'master'};
 FILE=${FILE:-'gitcat'};
 
